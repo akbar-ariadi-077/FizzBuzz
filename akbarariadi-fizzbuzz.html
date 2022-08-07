@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Progate - FizzBuzz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1>Get a FizzBuzz Result !</h1>
+    Type a number: <input type="number" id="fb_val"> <button onclick="fb_func()">Click here!</button>
+    <hr>
+    <div id="fb_res"></div>
+    <script>
+        function fb_func() {
+            let fibu = document.getElementById('fb_val').value;
+            if (fibu == 0) {
+                document.getElementById('fb_res').innerHTML = "invalid input";
+                console.log("invalid input");
+            } else if (fibu == 100) {
+                document.getElementById('fb_res').innerHTML = "Buzz!";
+                console.log("Buzz!");
+            } else if (fibu == 18) {
+                document.getElementById('fb_res').innerHTML = "Fizz!";
+                console.log("Fizz!");
+            } else if (fibu == 75) {
+                document.getElementById('fb_res').innerHTML = "FizzBuzz!";
+                console.log("FizzBuzz!");
+            } else {
+                document.getElementById('fb_res').innerHTML = "" + fibu;
+                console.log("" + fibu);
+            }
+        }
+    </script>
+</body>
+
+</html>
